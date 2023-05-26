@@ -8,36 +8,40 @@ const Profile = () => {
   const [open, setOpen] = useState(true);
 
   return (
-    <div className="flex">
+    <div className="flex ">
       <div
         className={` ${
-          open ? 'w-72' : 'w-10 '
-        } bg-dark-purple h-screen p-5  pt-8 relative duration-300`}
+          open ? 'w-72 ' : 'w-20 '
+        } bg-dark-purple border-r-2 bg-white border-blue-200 h-screen p-5  pt-8 relative duration-300`}
       >
         <IoIosArrowBack
           className={`absolute cursor-pointer -right-3 w-7 text-bold bg-white shadow text-2xl p-1 border-2 rounded-full  ${
             !open && 'rotate-180'
-          }`}
+          } text-3xl shadow `}
           onClick={() => setOpen(!open)}
         />
-        <div className="">
-          <h1
+        <div>
+          <div
             className={` origin-left  font-bold text-xl duration-200 ${
               !open && 'scale-0'
             }`}
           >
-            <div className="flex items-center gap-x-4 border-b-2 pb-8">
-              <span>
-                <CgProfile />
-              </span>
-              <span>Profile</span>
+            <div className="flex items-center pb-8 border-b-2 ">
+              <div className="inline-flex items-center justify-center flex-shrink-0 w-10 h-10 mr-2 text-2xl text-white bg-red-400 rounded-full">
+                <span>
+                  <CgProfile />
+                </span>
+              </div>
+              <div>
+                <span>Profile</span>
+              </div>
             </div>
-          </h1>
+          </div>
         </div>
         <ul className="pt-6">
-          <Link to="profileInfo">
+          <Link to="/navbar/profile/profileInfo/personalInfo">
             <li
-              className={`flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-600 font-semibold text-sm items-center gap-x-4 
+              className={`flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-600 font-semibold text-lg items-center gap-x-4 
             } `}
             >
               <div className="flex items-center gap-x-4">
@@ -54,22 +58,23 @@ const Profile = () => {
               </div>
             </li>
           </Link>
-          <li
-            className={`flex  rounded-md p-2 cursor-pointer hover:bg-light-white font-semibold text-gray-600  text-sm items-center gap-x-4 
-            } `}
-          >
-            <div className="flex items-center py-2 gap-x-4">
-              <span>
-                <VscKey />
-              </span>
-              <span className={`${!open && 'hidden'} origin-left duration-200`}>
-                Change Password
-              </span>
-            </div>
-          </li>
+          <Link to="changePassword">
+            <li className="flex items-center p-2 text-lg font-semibold text-gray-600 rounded-md cursor-pointer hover:bg-light-white gap-x-4 ">
+              <div className="flex items-center py-4 gap-x-4 active:border-blue-500">
+                <span>
+                  <VscKey />
+                </span>
+                <span
+                  className={`${!open && 'hidden'} origin-left duration-200`}
+                >
+                  Change Password
+                </span>
+              </div>
+            </li>
+          </Link>
         </ul>
       </div>
-      <div className="h-screen w-full pl-7">
+      <div className="w-full h-screen pl-7">
         <h1 className="text-2xl font-semibold ">
           <Outlet />
         </h1>

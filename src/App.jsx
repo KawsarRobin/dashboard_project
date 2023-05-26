@@ -8,6 +8,9 @@ import {
 import Dashboard from './Components/Dashboard/Dashboard.jsx';
 import Home from './Components/Home/Home.jsx';
 import Navbar from './Components/Navbar/Nav.jsx';
+import AddressDetails from './Components/profile/AddressDetails.jsx';
+import ChangePass from './Components/profile/ChangePass/ChangePass.jsx';
+import PersonalInfo from './Components/profile/PersonalInfo.jsx';
 import Profile from './Components/profile/Profile.jsx';
 import ProfileInfo from './Components/profile/ProfileInfo.jsx';
 
@@ -17,7 +20,11 @@ const router = createBrowserRouter(
     <Route path="/" element={<Home />}>
       <Route path="navbar" element={<Navbar />}>
         <Route path="profile" element={<Profile />}>
-          <Route path="profileInfo" element={<ProfileInfo />} />
+          <Route path="changePassword" element={<ChangePass />} />
+          <Route path="profileInfo" element={<ProfileInfo />}>
+            <Route path="personalInfo" element={<PersonalInfo />} />
+            <Route path="addressDetails" element={<AddressDetails />} />
+          </Route>
         </Route>
         <Route path="dashboard" element={<Dashboard />}></Route>
       </Route>

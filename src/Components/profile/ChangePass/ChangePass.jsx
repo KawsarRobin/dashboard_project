@@ -1,10 +1,10 @@
 import { AiOutlineHome } from 'react-icons/ai';
 import { IoIosArrowForward } from 'react-icons/io';
-import Section from './ProfileSection.jsx';
+import PasswordSection from './passwordSection';
 
-const ProfileInfo = () => {
+const ChangePass = () => {
   return (
-    <div className="min-h-screen text-gray-800">
+    <div className="h-screen text-gray-800">
       <header className="flex justify-between h-20 py-6 sm:px-10">
         <div>
           <div className="flex items-center text-sm font-semibold justify-evenly text-Xl sm:-ml-2">
@@ -18,13 +18,13 @@ const ProfileInfo = () => {
               <IoIosArrowForward />
             </div>
             <div className="text-blue-500">
-              <span>Profile Info</span>
+              <span>Change Password</span>
             </div>
           </div>
         </div>
         <div>
           <div className="flex flex-shrink-0 ml-auto">
-            <div className="pl-3 ml-3 space-x-1 ">
+            <div className="pl-3 ml-3 space-x-1 border-l">
               {/* Notification button */}
               <button className="relative p-2 text-gray-400 rounded-full hover:bg-gray-100 hover:text-gray-600 focus:bg-gray-100 focus:text-gray-600">
                 <span className="sr-only">Notifications</span>
@@ -51,14 +51,14 @@ const ProfileInfo = () => {
       </header>
       <div className="flex items-start h-20 sm:px-10">
         <div className="mr-6">
-          <h4 className="text-3xl font-bold ">Profile Info</h4>
+          <h4 className="text-3xl font-bold ">Change Password</h4>
         </div>
       </div>
       <main className="h-screen p-6 mx-10 space-y-6 bg-white rounded-lg sm:p-10">
-        {<Section />}
+        {<PasswordSection />}
       </main>
     </div>
   );
 };
 
-export default ProfileInfo;
+export default ChangePass;

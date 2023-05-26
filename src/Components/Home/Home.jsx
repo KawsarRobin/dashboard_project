@@ -3,7 +3,9 @@ import { Outlet } from 'react-router-dom';
 const Home = () => {
   return (
     <div className="w-full">
-      <Outlet />
+      <div>
+        <Outlet />
+      </div>
     </div>
   );
 };

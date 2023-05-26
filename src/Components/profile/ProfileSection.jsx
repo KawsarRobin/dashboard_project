@@ -1,15 +1,16 @@
+import { Link, NavLink, Outlet } from 'react-router-dom';
+import profilePic from '../../assets/profilePic.png';
+import Offcanvas from './Offcanvas/Offcanvas';
+
 const Section = () => {
   return (
     <div>
-      <section className="grid md:grid-cols-2 xl:grid-cols-1 gap-6">
-        <div className="flex justify-between pt-8 px-8 pb-3 bg-white shadow rounded-lg">
+      <section className="grid gap-6 md:grid-cols-2 xl:grid-cols-1">
+        <div className="flex justify-between px-8 pt-8 pb-3 bg-white border-b">
           <div>
             <div className="flex items-start ">
-              <div className="inline-flex flex-shrink-0 items-center justify-center h-16 w-16 text-purple-600 bg-purple-100 rounded-full mr-6">
-                <img
-                  src="../../assets/Screenshot 2023-03-30 at 1.56 1.png"
-                  alt=""
-                />
+              <div className="inline-flex items-center justify-center flex-shrink-0 w-16 h-16 mr-6 rounded-full">
+                <img src={profilePic} className="rounded-full" alt="" />
               </div>
               <div>
                 <span className="block text-xl font-bold">John doe</span>
@@ -18,31 +19,30 @@ const Section = () => {
                 </span>
               </div>
             </div>
-            <div className="flex justify-start pt-8 gap-6 text-sm text-gray-500">
-              <div>
+            <NavLink className="flex justify-start gap-6 pt-8 text-lg text-gray-700">
+              <Link to="personalInfo">
                 <p>Personal Information</p>
-              </div>
-              <div>
+              </Link>
+              <Link to="addressDetails">
                 <p>Address Details</p>
-              </div>
-            </div>
+              </Link>
+            </NavLink>
           </div>
-          <div className="">
+          <div>
             <div className="">
-              <button className="rounded-rounded bg-orange-500 p-2 text-white text-xl">
-                Edit Profile
-              </button>
+              <Offcanvas />
             </div>
             <div>
-              <span className="block text-xl font-bold"></span>
-              <span className="block text-xs text-gray-500">
+              <span className="flex justify-end py-2 text-xs text-gray-500">
                 last updated on dec 09, 2021
               </span>
             </div>
           </div>
         </div>
       </section>
-      <section className="grid md:grid-cols-2 xl:grid-cols-4 xl:grid-rows-3 xl:grid-flow-col gap-6"></section>
+      <section className="grid gap-6 md:grid-cols-2 xl:grid-cols-3 ">
+        <Outlet />
+      </section>
     </div>
   );
 };
