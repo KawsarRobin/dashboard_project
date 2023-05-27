@@ -34,7 +34,7 @@ const Nav = () => {
             </Link>
 
             <Link
-              to="profile"
+              to="/navbar/profile/profileInfo/personalInfo"
               href="#"
               className="inline-flex items-center justify-center py-3 rounded-lg hover:text-gray-400 hover:bg-gray-700 focus:bg-blue-400 focus:text-white"
             >

@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom';
 import Dashboard from './Components/Dashboard/Dashboard.jsx';
 import Home from './Components/Home/Home.jsx';
-import Navbar from './Components/Navbar/Nav.jsx';
+import Nav from './Components/Navbar/Nav.jsx';
 import AddressDetails from './Components/profile/AddressDetails.jsx';
 import ChangePass from './Components/profile/ChangePass/ChangePass.jsx';
 import PersonalInfo from './Components/profile/PersonalInfo.jsx';
@@ -18,7 +18,7 @@ import ProfileInfo from './Components/profile/ProfileInfo.jsx';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Home />}>
-      <Route path="navbar" element={<Navbar />}>
+      <Route path="navbar" element={<Nav />}>
         <Route path="profile" element={<Profile />}>
           <Route path="changePassword" element={<ChangePass />} />
           <Route path="profileInfo" element={<ProfileInfo />}>

@@ -5,7 +5,7 @@ import { IoIosArrowBack } from 'react-icons/io';
 import { VscKey } from 'react-icons/vsc';
 import { Link, Outlet } from 'react-router-dom';
 const Profile = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   return (
     <div className="flex ">
