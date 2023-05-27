@@ -1,8 +1,8 @@
+import QuickOrder from './../../Components/QuickOrders/QuickOrder';
 import DashHeader from './DashHeader';
 import DashSearch from './DashSearch';
 import OrderHistory from './OrderHistory/OrderHistory';
 import OrdersDash from './OrdersDash/OrdersDash';
-import QuickOrder from './QuickOrders/QuickOrder';
 import StaticsChart from './StaticsChart';
 
 const Dashboard = () => {
@@ -12,12 +12,12 @@ const Dashboard = () => {
         <DashHeader /> {/* -----------------> dashboard  Header*/}
         <main className="p-6 space-y-6 sm:p-10">
           <DashSearch /> {/* -----------------> Search Bar for dashboard */}
-          <div className="flex h-screen">
-            <section className="w-9/12 mr-4">
+          <div className="md:flex ">
+            <section className="mr-4 md:w-9/12">
               {<OrdersDash />} {/*---------------------> Orders Dash */}
               {<StaticsChart />} {/*-----------------------> Statics chart  */}
             </section>
-            <section className="w-3/12 bg-white rounded-lg">
+            <section className="bg-white rounded-lg md:w-3/12">
               <QuickOrder /> {/* -----------------> quick order section  */}
               <OrderHistory /> {/* ------------------>/* Order history  */}
             </section>

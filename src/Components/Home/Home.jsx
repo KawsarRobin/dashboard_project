@@ -7,7 +7,7 @@ const Home = () => {
     navigate('/navbar/dashboard');
   }, [navigate]);
   return (
-    <div className="w-full">
+    <div className="w-full h-screen">
       <div>
         <Outlet />
       </div>

@@ -26,18 +26,25 @@ const Offcanvas = () => {
 
   return (
     <div className="flex">
-      <button
-        className="flex items-center justify-between px-8 py-2 text-lg text-white bg-orange-500 rounded-lg"
-        onClick={openOffcanvas}
-      >
-        <span className="px-2">
-          <BsPencil />
-        </span>
-        <span>Edit Profile</span>
-      </button>
+      <div>
+        <button
+          className="flex items-center justify-between px-4 text-sm text-white bg-orange-500 rounded-lg xs:px-3 y-2 sm:px-4 sm:py-1 sm:text-base"
+          onClick={openOffcanvas}
+        >
+          <span className="px-1">
+            <BsPencil />
+          </span>
+          <span>Edit Profile</span>
+        </button>
+        <div>
+          <span className="flex justify-end py-2 text-xs text-gray-500">
+            last updated on dec 09, 2021
+          </span>
+        </div>
+      </div>
       {isOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-end bg-black bg-opacity-50">
-          <div className="w-3/12 h-screen transition-transform duration-100 ease-in-out transform bg-white du">
+          <div className="w-screen h-screen transition-transform duration-100 ease-in-out transform bg-white sm:w-3/12 du">
             <div className="flex items-center justify-between px-4 py-3 ">
               <h5 className="p-6 text-3xl font-semibold">Edit Profile</h5>
               <button type="button " onClick={closeOffcanvas}>

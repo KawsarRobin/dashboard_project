@@ -35,7 +35,7 @@ const router = createBrowserRouter(
 createRoot(document.getElementById('root')).render();
 function App() {
   return (
-    <div className="flex min-h-screen bg-gray-100 App">
+    <div className=" App">
       <RouterProvider router={router} />
     </div>
   );

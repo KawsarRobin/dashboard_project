@@ -27,7 +27,7 @@ const ChangePassCanvas = () => {
     if (currentPage === 1) {
       return (
         <div className="fixed inset-0 z-50 flex items-center justify-end bg-black bg-opacity-50">
-          <div className="w-3/12 h-screen transition-transform duration-100 ease-in-out transform bg-white du">
+          <div className="w-screen h-screen transition-transform duration-100 ease-in-out transform bg-white sm:w-3/12 du">
             <div className="flex items-center justify-between p-10 ">
               <div>
                 <span className="block text-2xl font-bold">

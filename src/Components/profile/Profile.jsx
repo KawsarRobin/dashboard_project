@@ -12,7 +12,7 @@ const Profile = () => {
       <div
         className={` ${
           open ? 'w-72 ' : 'w-20 '
-        } bg-dark-purple border-r-2 bg-white border-blue-200 h-screen p-5  pt-8 relative duration-300`}
+        } bg-dark-purple border-r-2 bg-white border-blue-200  p-5  pt-8 relative duration-300`}
       >
         <IoIosArrowBack
           className={`absolute cursor-pointer -right-3 w-7 text-bold bg-white shadow text-2xl p-1 border-2 rounded-full  ${
@@ -74,7 +74,7 @@ const Profile = () => {
           </Link>
         </ul>
       </div>
-      <div className="w-full h-screen pl-7">
+      <div className="w-full h-screen sm:overflow-hidden sm:pl-7">
         <h1 className="text-2xl font-semibold ">
           <Outlet />
         </h1>

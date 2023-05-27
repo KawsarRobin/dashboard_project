@@ -4,7 +4,7 @@ import PasswordSection from './passwordSection';
 
 const ChangePass = () => {
   return (
-    <div className="h-screen text-gray-800">
+    <div className="text-gray-800 ">
       <header className="flex justify-between h-20 py-6 sm:px-10">
         <div>
           <div className="flex items-center text-sm font-semibold justify-evenly text-Xl sm:-ml-2">
@@ -51,10 +51,12 @@ const ChangePass = () => {
       </header>
       <div className="flex items-start h-20 sm:px-10">
         <div className="mr-6">
-          <h4 className="text-3xl font-bold ">Change Password</h4>
+          <h4 className="font-bold xl:text-3xl md:text-2xl sm:text-xl ">
+            Change Password
+          </h4>
         </div>
       </div>
-      <main className="h-screen p-6 mx-10 space-y-6 bg-white rounded-lg sm:p-10">
+      <main className="h-screen space-y-6 bg-white rounded-lg md:p-6 md:mx-10 sm:p-10">
         {<PasswordSection />}
       </main>
     </div>

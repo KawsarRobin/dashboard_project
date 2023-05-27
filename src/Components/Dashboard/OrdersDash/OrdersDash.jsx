@@ -1,5 +1,5 @@
 import { SlBookOpen } from 'react-icons/sl';
-import stateImg from '../.../../../../assets/statisticsImg.png';
+import stateImg from '../../../assets/Images/statisticsImg.png';
 const OrdersDash = () => {
   // Styles for gradient
   const gradientStyle = {

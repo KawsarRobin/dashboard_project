@@ -4,8 +4,8 @@ import Section from './ProfileSection.jsx';
 
 const ProfileInfo = () => {
   return (
-    <div className="min-h-screen text-gray-800">
-      <header className="flex justify-between h-20 py-6 sm:px-10">
+    <div className="text-gray-800 ">
+      <header className="flex justify-between py-6 sm:px-10">
         <div>
           <div className="flex items-center text-sm font-semibold justify-evenly text-Xl sm:-ml-2">
             <div className="pl-2 text-lg">
@@ -51,10 +51,10 @@ const ProfileInfo = () => {
       </header>
       <div className="flex items-start h-20 sm:px-10">
         <div className="mr-6">
-          <h4 className="text-3xl font-bold ">Profile Info</h4>
+          <h4 className="xl:text-3xl md:text-2xl sm:text-xl">Profile Info</h4>
         </div>
       </div>
-      <main className="h-screen p-6 mx-10 space-y-6 bg-white rounded-lg sm:p-10">
+      <main className="h-screen space-y-6 bg-white rounded-lg md:p-6 md:mx-10 sm:p-10">
         {<Section />}
       </main>
     </div>

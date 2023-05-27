@@ -1,7 +1,7 @@
 const OrderHistory = () => {
   return (
     <>
-      <div className="h-screen row-span-3 bg-white rounded-lg shadow">
+      <div className="row-span-3 bg-white rounded-lg shadow">
         <div className="flex items-center justify-between px-6 py-5 text-xl font-semibold border-b border-gray-100">
           <span>Orders History</span>
           <button
@@ -56,10 +56,10 @@ const OrderHistory = () => {
             </span>
           </div>
         </div>
-        <div className="overflow-y-auto">
+        <div className="h-full overflow-y-auto">
           <ul className="p-6 space-y-6">
             <li className="flex justify-between pb-2 border-b border-dashed">
-              <div className="w-10 h-10 mr-3 overflow-hidden bg-gray-100 rounded-full">
+              <div className="w-10 h-10 mr-3 overflow-hidden text-sm bg-gray-100 rounded-full">
                 <img
                   src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
                   alt="Annette Watson profile picture"
@@ -70,12 +70,14 @@ const OrderHistory = () => {
                   My Crown & Bridge
                 </span>{' '}
                 <br />
-                <span className="ml-auto ">Location of Dummy,Address</span>
+                <span className="ml-auto text-sm">
+                  Location of Dummy,Address
+                </span>
               </div>
               <div>
                 <span className="text-sm font-semibold text-black">Date</span>{' '}
                 <br />
-                <span className="ml-auto ">26/05/2023</span>
+                <span className="ml-auto text-sm">26/05/2023</span>
               </div>
             </li>
             <li className="flex justify-between pb-2 border-b border-dashed">
@@ -90,12 +92,14 @@ const OrderHistory = () => {
                   My Crown & Bridge
                 </span>{' '}
                 <br />
-                <span className="ml-auto ">Location of Dummy,Address</span>
+                <span className="ml-auto text-sm">
+                  Location of Dummy,Address
+                </span>
               </div>
               <div>
                 <span className="text-sm font-semibold text-black">Date</span>{' '}
                 <br />
-                <span className="ml-auto ">26/05/2023</span>
+                <span className="ml-auto text-sm">26/05/2023</span>
               </div>
             </li>
             <li className="flex justify-between pb-2 border-b border-dashed">
@@ -110,12 +114,14 @@ const OrderHistory = () => {
                   My Crown & Bridge
                 </span>{' '}
                 <br />
-                <span className="ml-auto ">Location of Dummy,Address</span>
+                <span className="ml-auto text-sm">
+                  Location of Dummy,Address
+                </span>
               </div>
               <div>
                 <span className="text-sm font-semibold text-black">Date</span>{' '}
                 <br />
-                <span className="ml-auto ">26/05/2023</span>
+                <span className="ml-auto text-sm">26/05/2023</span>
               </div>
             </li>
             <li className="flex justify-between pb-2 border-b border-dashed">
@@ -130,12 +136,14 @@ const OrderHistory = () => {
                   My Crown & Bridge
                 </span>{' '}
                 <br />
-                <span className="ml-auto ">Location of Dummy,Address</span>
+                <span className="ml-auto text-sm">
+                  Location of Dummy,Address
+                </span>
               </div>
               <div>
                 <span className="text-sm font-semibold text-black">Date</span>{' '}
                 <br />
-                <span className="ml-auto ">26/05/2023</span>
+                <span className="ml-auto text-sm">26/05/2023</span>
               </div>
             </li>
             <li className="flex justify-between pb-2 border-b border-dashed">
@@ -150,12 +158,36 @@ const OrderHistory = () => {
                   My Crown & Bridge
                 </span>{' '}
                 <br />
-                <span className="ml-auto ">Location of Dummy,Address</span>
+                <span className="ml-auto text-sm">
+                  Location of Dummy,Address
+                </span>
               </div>
               <div>
                 <span className="text-sm font-semibold text-black">Date</span>{' '}
                 <br />
-                <span className="ml-auto ">26/05/2023</span>
+                <span className="ml-auto text-sm">26/05/2023</span>
+              </div>
+            </li>
+            <li className="flex justify-between pb-2 border-b border-dashed">
+              <div className="w-10 h-10 mr-3 overflow-hidden bg-gray-100 rounded-full">
+                <img
+                  src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
+                  alt="Annette Watson profile picture"
+                />
+              </div>
+              <div>
+                <span className="text-sm font-semibold text-black">
+                  My Crown & Bridge
+                </span>{' '}
+                <br />
+                <span className="ml-auto text-sm">
+                  Location of Dummy,Address
+                </span>
+              </div>
+              <div>
+                <span className="text-sm font-semibold text-black">Date</span>{' '}
+                <br />
+                <span className="ml-auto text-sm">26/05/2023</span>
               </div>
             </li>
           </ul>

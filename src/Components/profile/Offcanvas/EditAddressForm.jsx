@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
-import mapImg from '../../../assets/map.png';
+import mapImg from '../../../assets/Images/map.png';
 
 const EditAddressForm = (props) => {
   const [formData, setFormData] = useState({
@@ -26,10 +26,6 @@ const EditAddressForm = (props) => {
     // Add logic to save the form data
     console.log(formData);
   };
-
-  // const handleCancel = () => {
-  //   // Add logic to handle form cancellation
-  // };
 
   return (
     <div className="flex items-center justify-center">
