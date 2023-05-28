@@ -1,6 +1,7 @@
 import { Area, AreaChart, Tooltip, XAxis, YAxis } from 'recharts';
 
 const StaticsChart = () => {
+  //Data for Area Chart
   const data = [
     {
       name: 'October',
@@ -42,8 +43,8 @@ const StaticsChart = () => {
 
   return (
     <>
-      <div className="flex flex-col bg-white rounded-lg shadow md:col-span-2 md:row-span-2">
-        <div className="flex items-center justify-between px-6 py-5 font-semibold border-b border-gray-100">
+      <div className="flex flex-col px-8 py-6 mr-4 bg-white rounded-lg shadow md:col-span-2 md:row-span-2">
+        <div className="flex items-center justify-between font-semibold border-b border-gray-100">
           <div>
             <span className="text-2xl font-bold">Order Statics</span> <br />
             <span className="font-bold ">New</span>
@@ -57,7 +58,7 @@ const StaticsChart = () => {
             </button>
           </div>
         </div>
-        <div className="flex flex-grow w-full p-4">
+        <div className="p-4 ">
           <AreaChart
             width={730}
             height={300}

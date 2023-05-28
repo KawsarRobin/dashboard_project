@@ -5,20 +5,20 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from 'react-router-dom';
-import Dashboard from './Components/Dashboard/Dashboard.jsx';
-import Home from './Components/Home/Home.jsx';
-import Nav from './Components/Navbar/Nav.jsx';
 import AddressDetails from './Components/profile/AddressDetails.jsx';
 import ChangePass from './Components/profile/ChangePass/ChangePass.jsx';
 import PersonalInfo from './Components/profile/PersonalInfo.jsx';
 import Profile from './Components/profile/Profile.jsx';
 import ProfileInfo from './Components/profile/ProfileInfo.jsx';
+import Dashboard from './PageLayouts/Dashboard/Dashboard.jsx';
+import Home from './PageLayouts/Home/Home.jsx';
+import MainPage from './PageLayouts/MainPage/MainPage.jsx';
 
 // Configure nested routes with JSX
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Home />}>
-      <Route path="navbar" element={<Nav />}>
+      <Route path="navbar" element={<MainPage />}>
         <Route path="profile" element={<Profile />}>
           <Route path="changePassword" element={<ChangePass />} />
           <Route path="profileInfo" element={<ProfileInfo />}>
