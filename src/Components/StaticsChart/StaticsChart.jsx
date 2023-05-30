@@ -39,6 +39,30 @@ const StaticsChart = () => {
       pv: 2500,
       amt: 2500,
     },
+    {
+      name: 'March',
+
+      pv: 2500,
+      amt: 2500,
+    },
+    {
+      name: 'March',
+
+      pv: 2200,
+      amt: 2500,
+    },
+    {
+      name: 'March',
+
+      pv: 500,
+      amt: 2500,
+    },
+    {
+      name: 'March',
+
+      pv: 4500,
+      amt: 2500,
+    },
   ];
 
   return (
@@ -58,12 +82,12 @@ const StaticsChart = () => {
             </button>
           </div>
         </div>
-        <div className="p-4 ">
-          <AreaChart
-            width={730}
-            height={300}
+        <div className="p-4 overflow-x-scroll">
+      <AreaChart
+            width={1000}
+            height={400}
             data={data}
-            margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+            margin={{ top: 10, right: 0, left: 0, bottom: 0 }}
           >
             <defs>
               <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">

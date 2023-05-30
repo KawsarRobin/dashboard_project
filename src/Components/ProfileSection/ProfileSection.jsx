@@ -1,14 +1,14 @@
 import { Link, NavLink, Outlet } from 'react-router-dom';
 import profilePic from '../../assets/Images/profilePic.png';
-import Offcanvas from './Offcanvas/Offcanvas';
+import Offcanvas from '../EditProfile/EditProfile';
 
-const Section = () => {
+const ProfileSection = () => {
   return (
     <div>
       <section className="grid gap-6 md:grid-cols-2 xl:grid-cols-1">
         <div className="px-8 pt-8 pb-3 border-b ">
           <div>
-            <div className="flex items-start justify-between space-x-2">
+            <div className="flex flex-col items-end justify-between space-x-2 md:items-start md:flex-row lg:flex-row">
               <div className="flex items-start justify-start">
                 <div className="w-16 h-16 mr-6 rounded-full ">
                   <img src={profilePic} className="rounded-full" alt="" />
@@ -46,4 +46,4 @@ const Section = () => {
   );
 };
 
-export default Section;
+export default ProfileSection;

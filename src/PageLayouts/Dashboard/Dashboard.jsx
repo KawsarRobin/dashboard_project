@@ -7,8 +7,8 @@ import StaticsChart from '../../Components/StaticsChart/StaticsChart';
 const Dashboard = () => {
   return (
     <div>
-      <div className="h-screen p-10 text-gray-800 xl:overflow-hidden ">
-        <div className="">
+      <div className="p-10 text-gray-800">
+        <div>
           <DashboardHeader /> {/* -----------------> dashboard  Header*/}
           <main className="space-y-6 sm:p-10">
             <div className="flex flex-col gap-4 md:flex-row">

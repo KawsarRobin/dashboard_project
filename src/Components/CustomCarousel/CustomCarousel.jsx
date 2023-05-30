@@ -21,7 +21,12 @@ const CustomCarousel = () => {
       <div className="grid gap-6 m-4 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
         {quickOrderData.map((item) => (
           <div key={item.Id}>
-            <Card03 treatmentPic={item.Image} name={item.Name} />
+            <Card03
+              treatmentPic={item.Image}
+              name={item.Name}
+              bgColor={'bg-white'}
+              textColor={'text-gray-500'}
+            />
           </div>
         ))}
       </div>

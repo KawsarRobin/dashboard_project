@@ -1,17 +1,14 @@
 import PropTypes from 'prop-types';
 import { AiOutlineArrowDown, AiOutlineArrowUp } from 'react-icons/ai';
 
-const Card01 = ({ data }) => {
+const Card01 = ({ data, gradientStyle }) => {
   const { title, number, progress, vs, Img, stateImg } = data;
   const progressResult = parseFloat(progress.match(/-?\d+\.?\d*/)[0]);
 
-  const gradientStyle2 = {
-    background: 'linear-gradient(313.17deg, #E971B0 -44.06%, #8389F9 66.46%)',
-  };
   return (
     <>
       <div
-        style={gradientStyle2}
+        style={gradientStyle}
         className="flex items-center justify-between px-8 py-6 mr-4 text-white rounded-lg "
       >
         {/* order created */}
@@ -48,5 +45,6 @@ const Card01 = ({ data }) => {
 };
 Card01.propTypes = {
   data: PropTypes.object.isRequired,
+  gradientStyle: PropTypes.object.isRequired,
 };
 export default Card01;

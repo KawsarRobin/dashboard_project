@@ -1,11 +1,11 @@
+import PropTypes from 'prop-types';
 import { AiOutlineHome } from 'react-icons/ai';
 import { IoIosArrowForward } from 'react-icons/io';
-import Section from './ProfileSection.jsx';
 
-const ProfileInfo = () => {
+const ProfileInnerHeader = ({ pathTitle, innerHeadline }) => {
   return (
-    <div className="text-gray-800 ">
-      <header className="flex justify-between py-6 sm:px-10">
+    <>
+      <header className="flex items-center justify-between py-6 sm:px-10">
         <div>
           <div className="flex items-center text-sm font-semibold justify-evenly text-Xl sm:-ml-2">
             <div className="pl-2 text-lg">
@@ -18,7 +18,7 @@ const ProfileInfo = () => {
               <IoIosArrowForward />
             </div>
             <div className="text-blue-500">
-              <span>Profile Info</span>
+              <span>{pathTitle}</span>
             </div>
           </div>
         </div>
@@ -51,14 +51,17 @@ const ProfileInfo = () => {
       </header>
       <div className="flex items-start h-20 sm:px-10">
         <div className="mr-6">
-          <h4 className="xl:text-3xl md:text-2xl sm:text-xl">Profile Info</h4>
+          <h4 className="xl:text-3xl md:text-2xl sm:text-xl">
+            {innerHeadline}
+          </h4>
         </div>
       </div>
-      <main className="h-screen space-y-6 bg-white rounded-lg md:p-6 md:mx-10 sm:p-10">
-        {<Section />}
-      </main>
-    </div>
+    </>
   );
 };
-
-export default ProfileInfo;
+ProfileInnerHeader.propTypes = {
+  innerHeadline: PropTypes.string.isRequired,
+  pathTitle: PropTypes.string.isRequired,
+  // other prop validations
+};
+export default ProfileInnerHeader;

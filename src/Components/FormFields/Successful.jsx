@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import SuccessfulPhoto from '../../../../assets/Images/successful.png';
+import SuccessfulPhoto from '../../assets/Images/successful.png';
 const Successful = (props) => {
   //Handle click
   const handleClick = () => {
@@ -8,7 +8,7 @@ const Successful = (props) => {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-end bg-black bg-opacity-50">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 lg:justify-end">
       <div className="w-screen h-screen transition-transform duration-100 ease-in-out transform bg-white sm:w-3/12 du">
         <div className="flex flex-col items-center p-10 space-y-4 md:mt-72 sm:mt-40">
           <div>

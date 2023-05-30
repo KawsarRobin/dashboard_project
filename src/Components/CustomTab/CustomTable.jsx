@@ -73,11 +73,16 @@ const OrderHistory = () => {
             </span>
           </div>
         </div>
-        <div className="overflow-y-auto h-80">
+        <div className="overflow-y-auto h-[387px] small-scrollbar">
           <ul className="p-6 space-y-6">
             {OrderHistoryData.map((item) => (
               <div key={item.id}>
-                <Card04 singleOrder={item} />
+                <Card04
+                  singleOrder={item}
+                  textSize={'text-sm'}
+                  hoverColor={'hover:bg-gray-100'}
+                  bgColor={'bg-white'}
+                />
               </div>
             ))}
           </ul>

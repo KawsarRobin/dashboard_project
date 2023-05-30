@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import EditPassFrom from './EditPassFrom';
-import Successful from './Successful';
+import EditPassFrom from '../FormFields/EditPassFrom';
+import Successful from '../FormFields/Successful';
 
 const ChangePassCanvas = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +26,7 @@ const ChangePassCanvas = () => {
   const renderContent = () => {
     if (currentPage === 1) {
       return (
-        <div className="fixed inset-0 z-50 flex items-center justify-end bg-black bg-opacity-50">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 lg:justify-end">
           <div className="w-screen h-screen transition-transform duration-100 ease-in-out transform bg-white sm:w-3/12 du">
             <div className="flex items-center justify-between p-10 ">
               <div>
@@ -67,7 +67,7 @@ const ChangePassCanvas = () => {
     <>
       <div className="flex">
         <button
-          className="px-5 py-2 text-sm text-blue-500 border border-blue-500 rounded-lg"
+          className="px-5 py-2 text-sm text-blue-500 border border-blue-500 rounded-lg whitespace-nowrap"
           onClick={openOffcanvas}
         >
           Update Password

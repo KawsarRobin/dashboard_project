@@ -58,7 +58,7 @@ const EditPassFrom = (props) => {
                 Confirm Password
               </label>
               <input
-                type="text"
+                type="password"
                 id="confirmPassword"
                 name="confirmPassword"
                 placeholder="Confirm your Password Here"

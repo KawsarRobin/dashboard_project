@@ -3,16 +3,16 @@ import { BsCommand } from 'react-icons/bs';
 import { CgProfile } from 'react-icons/cg';
 import { IoIosArrowBack } from 'react-icons/io';
 import { VscKey } from 'react-icons/vsc';
-import { Link, Outlet } from 'react-router-dom';
-const Profile = () => {
-  const [open, setOpen] = useState(false);
+import { Link } from 'react-router-dom';
 
+const SecondLevelMenu = () => {
+  const [open, setOpen] = useState(false);
   return (
-    <div className="flex border-r-2">
+    <>
       <div
         className={` ${
           open ? 'w-72 ' : 'w-20 '
-        } bg-dark-purple  bg-white border-blue-200  p-5  pt-8 relative duration-300`}
+        } bg-dark-purple h-screen bg-white border-blue-200  min-h-screen  p-5  pt-8 relative duration-300`}
       >
         <IoIosArrowBack
           className={`absolute cursor-pointer -right-3 w-7 text-bold bg-white shadow text-2xl p-1 border-2 rounded-full  ${
@@ -74,12 +74,8 @@ const Profile = () => {
           </Link>
         </ul>
       </div>
-      <div className="w-full h-screen sm:overflow-hidden sm:pl-7">
-        <h1 className="text-2xl font-semibold ">
-          <Outlet />
-        </h1>
-      </div>
-    </div>
+    </>
   );
 };
-export default Profile;
+
+export default SecondLevelMenu;

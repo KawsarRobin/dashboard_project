@@ -35,23 +35,37 @@ const OrdersDash = () => {
     vs: 'Previous Month',
     Img: 'https://i.ibb.co/JC82str/order.png',
   };
+
+  const gradientStyleForCard1 = {
+    background: 'linear-gradient(313.17deg, #E971B0 -44.06%, #8389F9 66.46%)',
+  };
+
+  const gradientStyleForCard2 = {
+    background:
+      'linear-gradient(143.48deg, rgba(101, 109, 249, 0.123856) 50.29%, rgba(238, 99, 144, 0.151832) 103.08%)',
+  };
   return (
     <>
       <div className="flex flex-col gap-4 md:flex-row">
         {/* ------------------Card O1---------------  */}
         <div style={{ flex: '0 0 66%', minWidth: '0' }}>
-          <Card01 data={card1DataObject} />
+          <Card01
+            data={card1DataObject}
+            gradientStyle={gradientStyleForCard1}
+          />
         </div>
         {/* ------------ Single Card02-------------- */}
         <div style={{ flex: '0 0 33%', minWidth: '0' }}>
-          <Card02 data={card02DataObject} />
+          <Card02
+            data={card02DataObject}
+            gradientStyle={gradientStyleForCard2}
+          />
         </div>
       </div>
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-        {/* single card */}
         {data.map((item) => (
           <div key={item.id}>
-            <Card02 data={item} />
+            <Card02 data={item} gradientStyle={gradientStyleForCard2} />
           </div>
         ))}
       </div>

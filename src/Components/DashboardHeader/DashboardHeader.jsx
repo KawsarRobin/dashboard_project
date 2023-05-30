@@ -54,9 +54,9 @@ const DashHeader = () => {
             <input
               type="text"
               role="search"
-              readOnly
+              
               placeholder={`Search by Orders Name...`}
-              className="w-full py-2 pl-10 pr-4 placeholder-gray-400 border-2 rounded-lg focus:bg-gray-50"
+              className="w-full py-2 pl-10 pr-4 placeholder-gray-400 border-2 rounded-lg outline-none"
             />
           </div>
         </div>
